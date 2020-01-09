@@ -1,0 +1,32 @@
+name:                hosts-watchman
+version:             0.0.0.1
+github:              "nixorn/host-watchman"
+license:             BSD3
+author:              "Artem Kanev"
+maintainer:          "nixorn@yanex.ru"
+copyright:           "2020 Artem Kanev"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+description:         Please see the README on GitHub at <https://github.com/nixorn/hosts-watchman#readme>
+
+executables:
+  hosts-watchman-daemon:
+    main:                Main.hs
+    source-dirs:         app/hosts-watchman/
+    dependencies:
+    - hosts-watchman
+
+dependencies:
+- base >= 4.7 && < 5
+- megaparsec
+- parser-combinators
+- text
+- time
+- void
+- containers
+
+library:
+  source-dirs: src
