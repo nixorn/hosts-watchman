@@ -2,3 +2,6 @@
 hosts-watchman.cabal
 *~
 TAGS
+trusted_hosts
+untrusted_hosts
+unchecked_hosts

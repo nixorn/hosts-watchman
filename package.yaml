@@ -13,7 +13,7 @@ extra-source-files:
 description:         Please see the README on GitHub at <https://github.com/nixorn/hosts-watchman#readme>
 
 executables:
-  hosts-watchman-daemon:
+  hosts-watchman:
     main:                Main.hs
     source-dirs:         app/hosts-watchman/
     dependencies:
@@ -27,6 +27,7 @@ dependencies:
 - time
 - void
 - containers
+- process
 
 library:
   source-dirs: src
